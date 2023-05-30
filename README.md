@@ -1,2 +1,2 @@
 # learning-projects
-Simple projeects for renewing things
+Simple projects for renewing memory on front-end web-development
