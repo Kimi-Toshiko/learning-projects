@@ -1,0 +1,24 @@
+@import 'vars';
+@import 'mixins';
+html {
+    @include base;
+}
+
+nav {
+    width: 100%;
+    @include flex (row, nowrap, space-between);
+    align-content: center;
+    align-items: center;
+    padding-top: 1rem;
+    position: absolute;
+    .logo {
+        font-size: 2rem;
+        align-self: center;
+        margin-left: 2rem;
+    }
+    .donate {
+        font-size: 1.5rem;
+        align-self: center;
+        margin-right: 2rem;
+    }
+}
