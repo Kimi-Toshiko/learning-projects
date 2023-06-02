@@ -32,6 +32,9 @@ html .white-text {
 html .gray-text {
   color: #8C8C8C;
 }
+html .width-20 {
+  width: 20%;
+}
 html .width-40 {
   width: 40%;
 }
@@ -202,4 +205,8 @@ nav a:hover, nav a:active {
 }
 .about-health article p.white-text {
   margin-bottom: 1rem;
+}
+
+.choose-a-kitten .images {
+  margin-top: 2rem;
 }
