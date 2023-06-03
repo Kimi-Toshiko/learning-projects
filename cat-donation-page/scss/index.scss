@@ -73,3 +73,57 @@ nav {
         margin-top: 2rem;
     }
 }
+
+.motivation-info {
+    @include bg-dark ($quote-img, cover);
+    article {
+        padding: 0 0;
+        blockquote {
+            margin-left: 10%;
+            width: 40%;
+            font-size: 4rem;
+            text-transform: uppercase;
+            font-family: $important-font;
+            line-height: 5rem;
+            &:before {
+                content: '"';
+                display: block;
+                font-size: 20rem;
+                color: rgba($color: #FFF, $alpha: 0.1);
+                position: relative;
+                top: 10rem;
+                left: -5%;
+            }
+            &:after {
+                content: '"';
+                display: block;
+                font-size: 20rem;
+                color: rgba($color: #FFF, $alpha: 0.1);
+                position: relative;
+                top: 3rem;
+                left: 25vw;
+            }
+        }
+    }
+}
+
+footer {
+    padding: 1rem 2rem;
+    .social-media {
+        font-size: 1.5rem;
+        a {
+            i {
+                transition: .3s;
+            }
+            .fa-instagram {
+                margin: 0 1rem;
+            }
+            &:hover, &:active {
+                i {
+                    color: $white;
+                    transition: .3s;
+                }
+            }
+        }
+    } 
+}

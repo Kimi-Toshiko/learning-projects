@@ -210,3 +210,57 @@ nav a:hover, nav a:active {
 .choose-a-kitten .images {
   margin-top: 2rem;
 }
+
+.motivation-info {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(50, 50, 50, 0.7)), to(rgba(50, 50, 50, 0.7))), url("../assets/white-and-ginger-three-kittens-in-hands.jpg") no-repeat;
+  background: linear-gradient(rgba(50, 50, 50, 0.7), rgba(50, 50, 50, 0.7)), url("../assets/white-and-ginger-three-kittens-in-hands.jpg") no-repeat;
+  background-size: cover;
+}
+.motivation-info article {
+  padding: 0 0;
+}
+.motivation-info article blockquote {
+  margin-left: 10%;
+  width: 40%;
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  line-height: 5rem;
+}
+.motivation-info article blockquote:before {
+  content: '"';
+  display: block;
+  font-size: 20rem;
+  color: rgba(255, 255, 255, 0.1);
+  position: relative;
+  top: 10rem;
+  left: -5%;
+}
+.motivation-info article blockquote:after {
+  content: '"';
+  display: block;
+  font-size: 20rem;
+  color: rgba(255, 255, 255, 0.1);
+  position: relative;
+  top: 3rem;
+  left: 25vw;
+}
+
+footer {
+  padding: 1rem 2rem;
+}
+footer .social-media {
+  font-size: 1.5rem;
+}
+footer .social-media a i {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+footer .social-media a .fa-instagram {
+  margin: 0 1rem;
+}
+footer .social-media a:hover i, footer .social-media a:active i {
+  color: #FFF;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}

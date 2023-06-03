@@ -110,7 +110,7 @@
 }
 
 @mixin bg-dark ($img, $size) {
-    background: linear-gradient(rgba(40, 40, 40, 0.5), rgba(40, 40, 40, 0.5)), $img no-repeat;
+    background: linear-gradient(rgba(50, 50, 50, 0.7), rgba(50, 50, 50, 0.7)), $img no-repeat;
     background-size: $size;
 }
 
