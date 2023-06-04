@@ -48,6 +48,31 @@ main {
     margin: 0 auto;
     grid-template-columns: [first-col-start] 70% [second-col-start] 30% [end-col];
     grid-template-rows: [first-row-start] 60% [second-row-start] 40% [end-row];
+    figcaption {
+        display: none;
+    }
+    .btn {
+        background-color: lightsalmon;
+        width: 10rem;
+        height: 3rem;
+        border-radius: 5rem;
+        a {
+            width: 100%;
+            height: 100%;
+            background-color: $yellow;
+            border-radius: 5rem;
+            display: flex;
+            align-content: center;
+            align-items: center;
+            justify-content: center;
+            opacity: .7;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: $white;
+            letter-spacing: .1rem;
+            font-weight: 900;
+        }
+    }
     .all-info {
         background-color: lavender;
         grid-column: first-col-start / span second-col-start;
@@ -69,28 +94,6 @@ main {
             margin: 1rem 0;
             background-color: violet;
         }
-        .btn {
-            background-color: lightsalmon;
-            width: 10rem;
-            height: 3rem;
-            border-radius: 5rem;
-            a {
-                width: 100%;
-                height: 100%;
-                background-color: $yellow;
-                border-radius: 5rem;
-                display: flex;
-                align-content: center;
-                align-items: center;
-                justify-content: center;
-                opacity: .7;
-                text-transform: uppercase;
-                text-decoration: none;
-                color: $white;
-                letter-spacing: .1rem;
-                font-weight: 900;
-            }
-        }
     }
     .all-movies {
         background-color: lawngreen;
@@ -110,15 +113,14 @@ main {
             .movie {
                 width: 15%;
                 @include box-shadow;
+                border-radius: .5rem;
                 figure {
                     width: 100%;
                     height: 100%;
                     img {
                         width: 100%;
                         height: 100%;
-                    }
-                    figcaption {
-                        display: none;
+                        border-radius: .5rem;
                     }
                 }
             }
@@ -128,6 +130,26 @@ main {
         background-color: lightcoral;
         grid-column: second-col-start / span end-col;
         grid-row: first-row-start / span end-row;
+        figure {
+            width: 70%;
+            margin: 0 auto;
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: .5rem;
+                @include box-shadow;
+            }
+        }
+        p {
+            width: 70%;
+            margin: 1rem auto;
+            color: $white;
+            font-size: 1.1rem;
+            line-height: 1.2rem;
+        }
+        .btn {
+            margin-left: 15%;
+        }
     }
     
 }
