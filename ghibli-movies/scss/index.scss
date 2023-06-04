@@ -3,4 +3,17 @@
     @include gradient-two-colors ($yellow, $darkgreen);
     width: 100vw;
     height: 100vh;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    overflow: hidden;
+}
+
+.main-body {
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;
+    @include bg-img ($page-bg-img, no-repeat, cover);
+    border-radius: 1rem;
+    @include box-shadow;
 }
