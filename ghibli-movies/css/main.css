@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+html {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
 .main-bg {
   background-color: #efdc70;
   background: -webkit-gradient(linear, left top, left bottom, from(#efdc70), to(#405b29));
@@ -27,4 +31,22 @@
   box-shadow: 2px 2px 8px 4px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 2px 2px 8px 4px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 2px 2px 8px 4px rgba(0, 0, 0, 0.75);
+}
+
+header {
+  width: 100%;
+}
+header nav {
+  width: 80%;
+  margin: 0 auto;
+  padding: 2.5rem 0;
+}
+header nav a {
+  text-decoration: none;
+  color: #1f2216;
+}
+header nav a h1 {
+  text-transform: lowercase;
+  font-size: 2rem;
+  font-weight: 900;
 }

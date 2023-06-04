@@ -19,6 +19,11 @@
     background-size: $size;
 }
 
+@mixin bg-dark ($img, $size) {
+    background: linear-gradient(rgba(50, 50, 50, 0.7), rgba(50, 50, 50, 0.7)), $img no-repeat;
+    background-size: $size;
+}
+
 @mixin gradient-two-colors ($color1, $color2, $degree: 180deg) {
     background: linear-gradient($degree, $color1, $color2);
 }
