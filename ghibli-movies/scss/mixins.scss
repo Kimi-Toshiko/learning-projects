@@ -18,3 +18,7 @@
     background-repeat: $repeat;
     background-size: $size;
 }
+
+@mixin gradient-two-colors ($color1, $color2, $degree: 180deg) {
+    background: linear-gradient($degree, $color1, $color2);
+}

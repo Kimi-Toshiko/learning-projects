@@ -1,1 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+.main-bg {
+  background-color: #efdc70;
+  background: -webkit-gradient(linear, left top, left bottom, from(#efdc70), to(#405b29));
+  background: linear-gradient(180deg, #efdc70, #405b29);
+  width: 100vw;
+  height: 100vh;
+}

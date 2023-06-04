@@ -1,0 +1,6 @@
+.main-bg {
+    background-color: $yellow;
+    @include gradient-two-colors ($yellow, $darkgreen);
+    width: 100vw;
+    height: 100vh;
+}
