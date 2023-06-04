@@ -41,9 +41,6 @@ header {
 }
 
 main {
-    img {
-        width: 20%;
-    }
     display: grid;
     width: 86%;
     height: 80%;
@@ -99,7 +96,33 @@ main {
         background-color: lawngreen;
         grid-column: first-col-start / span second-col-start;
         grid-row: second-row-start / span end-row;
-
+        padding: 0 2rem;
+        p {
+            text-align: right;
+            color: $white;
+            font-family: $important-font;
+            font-size: 1.1rem;
+            @include txt-shadow;
+        }
+        .movies {
+            @include flex (row, nowrap, space-between);
+            margin-top: 1rem;
+            .movie {
+                width: 15%;
+                @include box-shadow;
+                figure {
+                    width: 100%;
+                    height: 100%;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                    figcaption {
+                        display: none;
+                    }
+                }
+            }
+        }
     }
     .one-movie {
         background-color: lightcoral;
