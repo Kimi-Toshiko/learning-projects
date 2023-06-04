@@ -4,9 +4,9 @@ html {
 }
 
 .main-bg {
-  background-color: #efdc70;
-  background: -webkit-gradient(linear, left top, left bottom, from(#efdc70), to(#405b29));
-  background: linear-gradient(180deg, #efdc70, #405b29);
+  background-color: #c4c9af;
+  background: -webkit-gradient(linear, left top, left bottom, from(#c4c9af), to(#002238));
+  background: linear-gradient(180deg, #c4c9af, #002238);
   width: 100vw;
   height: 100vh;
   display: -webkit-box;
@@ -192,7 +192,6 @@ main figcaption {
   display: none;
 }
 main .btn {
-  background-color: lightsalmon;
   width: 10rem;
   height: 3rem;
   border-radius: 5rem;
@@ -200,7 +199,7 @@ main .btn {
 main .btn a {
   width: 100%;
   height: 100%;
-  background-color: #efdc70;
+  background-color: #003533;
   border-radius: 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -213,21 +212,25 @@ main .btn a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  opacity: 0.7;
   text-transform: uppercase;
   text-decoration: none;
   color: #fcfdfc;
   letter-spacing: 0.1rem;
   font-weight: 900;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+main .btn a:hover, main .btn a:active {
+  background-color: #005b8f;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 main .all-info {
-  background-color: lavender;
   grid-column: first-col-start/span second-col-start;
   grid-row: first-row-start/span second-row-start;
 }
 main .all-info h2 {
   width: 70%;
-  background-color: lightgreen;
   font-size: 4rem;
   color: #fcfdfc;
   font-family: "Berkshire Swash", cursive;
@@ -240,10 +243,8 @@ main .all-info p {
   width: 30%;
   line-height: 1.5rem;
   margin: 1rem 0;
-  background-color: violet;
 }
 main .all-movies {
-  background-color: lawngreen;
   grid-column: first-col-start/span second-col-start;
   grid-row: second-row-start/span end-row;
   padding: 0 2rem;
@@ -276,6 +277,8 @@ main .all-movies .movies .movie {
   -webkit-box-shadow: 2px 2px 8px 4px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 2px 2px 8px 4px rgba(0, 0, 0, 0.75);
   border-radius: 0.5rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 main .all-movies .movies .movie figure {
   width: 100%;
@@ -286,8 +289,12 @@ main .all-movies .movies .movie figure img {
   height: 100%;
   border-radius: 0.5rem;
 }
+main .all-movies .movies .movie:hover, main .all-movies .movies .movie:active {
+  scale: 1.05;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
 main .one-movie {
-  background-color: lightcoral;
   grid-column: second-col-start/span end-col;
   grid-row: first-row-start/span end-row;
 }

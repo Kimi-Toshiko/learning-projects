@@ -52,34 +52,35 @@ main {
         display: none;
     }
     .btn {
-        background-color: lightsalmon;
         width: 10rem;
         height: 3rem;
         border-radius: 5rem;
         a {
             width: 100%;
             height: 100%;
-            background-color: $yellow;
+            background-color: $brown;
             border-radius: 5rem;
             display: flex;
             align-content: center;
             align-items: center;
             justify-content: center;
-            opacity: .7;
             text-transform: uppercase;
             text-decoration: none;
             color: $white;
             letter-spacing: .1rem;
             font-weight: 900;
+            transition: .3s;
+            &:hover, &:active {
+                background-color: $blue;
+                transition: .3s;
+            }
         }
     }
     .all-info {
-        background-color: lavender;
         grid-column: first-col-start / span second-col-start;
         grid-row: first-row-start / span second-row-start;
         h2 {
             width: 70%;
-            background-color: lightgreen;
             font-size: 4rem;
             color: $white;
             font-family: $important-font;
@@ -92,11 +93,9 @@ main {
             width: 30%;
             line-height: 1.5rem;
             margin: 1rem 0;
-            background-color: violet;
         }
     }
     .all-movies {
-        background-color: lawngreen;
         grid-column: first-col-start / span second-col-start;
         grid-row: second-row-start / span end-row;
         padding: 0 2rem;
@@ -114,6 +113,7 @@ main {
                 width: 15%;
                 @include box-shadow;
                 border-radius: .5rem;
+                transition: .3s;
                 figure {
                     width: 100%;
                     height: 100%;
@@ -123,11 +123,14 @@ main {
                         border-radius: .5rem;
                     }
                 }
+                &:hover, &:active {
+                    scale: 1.05;
+                    transition: .3s;
+                }
             }
         }
     }
     .one-movie {
-        background-color: lightcoral;
         grid-column: second-col-start / span end-col;
         grid-row: first-row-start / span end-row;
         figure {
