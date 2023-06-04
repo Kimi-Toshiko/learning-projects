@@ -25,7 +25,7 @@ html {
 header {
     width: 100%;
     nav {
-        width: 80%;
+        width: 86%;
         margin: 0 auto;
         padding: 2.5rem 0;
         a {
@@ -38,4 +38,34 @@ header {
             }
         }
     }
+}
+
+main {
+    img {
+        width: 20%;
+    }
+    display: grid;
+    width: 86%;
+    height: 80%;
+    overflow: hidden;
+    margin: 0 auto;
+    grid-template-columns: [first-col-start] 70% [second-col-start] 30% [end-col];
+    grid-template-rows: [first-row-start] 60% [second-row-start] 40% [end-row];
+    .all-info {
+        background-color: lavender;
+        grid-column: first-col-start / span second-col-start;
+        grid-row: first-row-start / span second-row-start;
+    }
+    .all-movies {
+        background-color: lawngreen;
+        grid-column: first-col-start / span second-col-start;
+        grid-row: second-row-start / span end-row;
+
+    }
+    .one-movie {
+        background-color: lightcoral;
+        grid-column: second-col-start / span end-col;
+        grid-row: first-row-start / span end-row;
+    }
+    
 }
