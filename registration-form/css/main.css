@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+html {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+}
+
+.width-80 {
+  width: 90%;
+  margin: 0 auto;
+}
+
+header {
+  background: #051d41;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #051d41), to(#6ae1e9));
+  background: linear-gradient(90deg, #051d41 50%, #6ae1e9 100%);
+  width: 100%;
+  color: #fff;
+}
+header .main-info {
+  padding: 3rem 0 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 15%;
+  margin: 0 5%;
+}
+header .main-info i {
+  font-size: 3rem;
+}
+header .main-info .info {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+header .main-info .info h1 {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+header .main-info .info p {
+  color: #3d897c;
+  text-transform: uppercase;
+}
