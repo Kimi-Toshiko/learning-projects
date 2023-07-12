@@ -88,3 +88,39 @@ header {
         }
     }
 }
+
+.personal-info-form, .address-form {
+    margin-top: 2rem;
+    @include flex (row, wrap, space-between);
+    label {
+        text-transform: capitalize;
+        font-weight: 600;
+        letter-spacing: .05rem;
+    }
+    .form-input {
+        width: 45%;
+        margin: .5rem 0;
+        @include flex (row, no-wrap, space-between, center);
+        label {
+            width: 11rem;
+        }
+        input, select {
+            width: calc(100% - 12rem);
+            height: 2.2rem;
+            border: 2px solid lightgray;
+            border-radius: 0;
+            padding: 0 1rem;
+            font-size: .9rem;
+        }
+        &:first-child {
+            width: 100%;
+        }
+    }
+    .radio-buttons {
+        width: 45%;
+        .radio-input {
+            width: calc(100% - 10rem);
+            @include flex (row, no-wrap, space-between, center);
+        }
+    }
+}

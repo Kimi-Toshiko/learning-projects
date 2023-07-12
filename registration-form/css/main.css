@@ -119,3 +119,87 @@ header .main-info .info p {
   border: 1px solid lightgray;
   color: gray;
 }
+
+.personal-info-form, .address-form {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.personal-info-form label, .address-form label {
+  text-transform: capitalize;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+}
+.personal-info-form .form-input, .address-form .form-input {
+  width: 45%;
+  margin: 0.5rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.personal-info-form .form-input label, .address-form .form-input label {
+  width: 11rem;
+}
+.personal-info-form .form-input input, .personal-info-form .form-input select, .address-form .form-input input, .address-form .form-input select {
+  width: calc(100% - 12rem);
+  height: 2.2rem;
+  border: 2px solid lightgray;
+  border-radius: 0;
+  padding: 0 1rem;
+  font-size: 0.9rem;
+}
+.personal-info-form .form-input:first-child, .address-form .form-input:first-child {
+  width: 100%;
+}
+.personal-info-form .radio-buttons, .address-form .radio-buttons {
+  width: 45%;
+}
+.personal-info-form .radio-buttons .radio-input, .address-form .radio-buttons .radio-input {
+  width: calc(100% - 10rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
