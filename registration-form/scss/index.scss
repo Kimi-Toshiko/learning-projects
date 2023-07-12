@@ -89,6 +89,10 @@ header {
     }
 }
 
+.footer, .address-info, .personal-info {
+    margin-top: 4rem;
+}
+
 .personal-info-form, .address-form {
     margin-top: 2rem;
     @include flex (row, wrap, space-between);
@@ -123,4 +127,75 @@ header {
             @include flex (row, no-wrap, space-between, center);
         }
     }
+}
+
+.footer-info {
+    display: grid;
+    grid-template-columns: [first-col] 40% [second-col] 60% [third-col];
+    grid-template-rows: [first-row] 50% [second-row] 50% [third-row];
+    .footer-info-address {
+        grid-column: first-col / span second-col;
+        grid-row: first-row / span third-row;
+        @include flex (column, no-wrap, space-between);
+        p {
+            font-weight: 600;
+            a {
+                color: $highlight-color;
+                text-decoration: none;
+                transition: .3s;
+                &:active, &:hover {
+                    transition: .3s;
+                    color: $dark-blue;
+                }
+            }
+        }
+    }
+    .footer-signatures {
+        grid-column: second-col / span third-col;
+        grid-row: first-row / span second-row;
+        @include flex (row, no-wrap, space-between);
+        .signature {
+            width: 40%;
+            hr {
+                color: lightgray;
+                border: 3px solid lightgray;
+                margin-bottom: 1rem;
+            }
+            p {
+                font-weight: 500;
+                text-align: center;
+            }
+        }
+    }
+    .footer-thanks {
+        grid-column: second-col / span third-col;
+        grid-row: second-row / span third-row;
+        text-align: right;
+        margin-top: 2rem;
+        h3 {
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            font-weight: 600;
+            i {
+                color: $highlight-color;
+            }
+        }
+        p {
+            width: 50%;
+            margin-left: 50%;
+            margin-top: 1rem;
+        }
+    }
+}
+
+.color-light {
+    background-color: $highlight-color;
+    width: 98.9vw;
+    height: 1.5rem;
+    margin-top: 3rem;
+}
+.color-dark {
+    background-color: $dark-blue;
+    width: 98.9vw;
+    height: 4rem;
 }
