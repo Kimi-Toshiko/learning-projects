@@ -56,3 +56,53 @@ header .main-info .info p {
   color: #3d897c;
   text-transform: uppercase;
 }
+
+.reg-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.reg-form .reg-form-info {
+  margin-top: 2.5rem;
+  width: 40%;
+}
+.reg-form .reg-form-info h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.reg-form .reg-form-info h2 i {
+  color: #3d897c;
+}
+.reg-form .reg-form-info p {
+  margin-top: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.02rem;
+}
+.reg-form .reg-form-form label {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.03rem;
+}
+.reg-form .reg-form-form #reg-form-date {
+  display: block;
+  width: calc(100% - 1rem);
+  margin-top: 1rem;
+  height: 3rem;
+  padding: 0.5rem;
+  border: 1px solid lightgray;
+  color: gray;
+}
