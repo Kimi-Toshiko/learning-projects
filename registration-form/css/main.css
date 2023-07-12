@@ -9,6 +9,19 @@ html {
   margin: 0 auto;
 }
 
+.heading {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 2rem;
+}
+.heading hr {
+  width: 5%;
+  margin: 1rem 0;
+  color: #3d897c;
+  border: 2px solid #3d897c;
+}
+
 header {
   background: #051d41;
   background: -webkit-gradient(linear, left top, right top, color-stop(50%, #051d41), to(#6ae1e9));

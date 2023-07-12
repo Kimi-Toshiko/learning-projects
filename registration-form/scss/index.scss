@@ -11,6 +11,19 @@ html {
     margin: 0 auto;
 }
 
+.heading {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 2rem;
+    hr {
+        width: 5%;
+        margin: 1rem 0;
+        color: $highlight-color;
+        border: 2px solid $highlight-color;
+    }
+}
+
 header {
     background: $dark-blue;   
     background: linear-gradient(90deg, $dark-blue 50%, $light-blue 100%);
