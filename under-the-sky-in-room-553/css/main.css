@@ -1,1 +1,64 @@
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Oswald:wght@300;400&family=Prata&family=Raleway&display=swap");
+html {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  background-color: #fff;
+}
+
+.width-90 {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.top-section {
+  width: calc(100% - 2rem);
+  background-color: #000;
+  text-align: center;
+  color: #a2a2a2;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.top-section .social-medias {
+  font-size: 1.2rem;
+}
+.top-section .social-medias a {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #a2a2a2;
+}
+.top-section .social-medias a:nth-child(2) {
+  display: inline-block;
+  margin: auto 0.5rem;
+}
+.top-section .social-medias a:hover, .top-section .social-medias a:active {
+  color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.top-section .copyright p {
+  font-size: 1.1rem;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+}
+.top-section .menu-bubbles {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 0.5rem;
+}

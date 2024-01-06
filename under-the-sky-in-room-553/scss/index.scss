@@ -1,0 +1,46 @@
+@import 'mixins';
+@import 'vars';
+
+html {
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+    background-color: $white-color;
+}
+
+.width-90 {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.top-section {
+    @include black-block(1rem);
+    color: $gray-color;
+    padding: 1rem;
+    @include flex (row, no-wrap, space-between);
+    .social-medias {
+        font-size: 1.2rem;
+        a {
+            transition: .3s;
+            color: $gray-color;
+            &:nth-child(2) {
+                display: inline-block;
+                margin: auto .5rem;
+            }
+            &:hover, &:active {
+                color: $white-color;
+                transition: .3s;
+            }
+        }
+    }
+    .copyright {
+        p {
+            font-size: 1.1rem;
+            font-weight: 300;
+            letter-spacing: .1rem;
+        }
+    }
+    .menu-bubbles {
+        align-self: center;
+        font-size: .5rem;
+    }
+}
