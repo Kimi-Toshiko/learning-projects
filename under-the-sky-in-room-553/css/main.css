@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Oswald:wght@300;400&family=Prata&family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Great+Vibes&family=Oswald:wght@300;400&family=Prata&family=Raleway&display=swap");
 html {
   font-family: "Oswald", sans-serif;
   font-size: 16px;
@@ -23,6 +23,7 @@ img {
   width: calc(100% - 2rem);
   background-color: #000;
   text-align: center;
+  color: #fff;
   color: #a2a2a2;
   padding: 1rem;
   display: -webkit-box;
@@ -99,30 +100,31 @@ img {
   border-right: 3px solid #000;
 }
 .fic-description-section .description h2 {
-  margin-top: 2rem;
+  width: 90%;
+  margin: 2rem auto 0 auto;
   color: #404040;
   font-size: 1.5rem;
 }
 .fic-description-section .description h1 {
   font-family: "Raleway", sans-serif;
-  width: 95%;
   font-weight: 600;
   font-size: 3rem;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
-  margin: 1rem 0;
+  margin: 1rem auto;
+  width: 90%;
 }
 .fic-description-section .description p {
-  margin: 0 0 0.5rem 0;
+  margin: 0 auto 0.5rem auto;
   font-weight: 400;
   font-size: 1.1rem;
-  width: 95%;
+  width: 90%;
 }
 .fic-description-section .description .btn {
   width: 30%;
   height: 7%;
   border: 2px solid #000;
-  margin-top: 2rem;
+  margin: 2rem 0 0 5%;
 }
 .fic-description-section .description .btn a {
   display: inline-block;
@@ -165,4 +167,49 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0;
+}
+
+.song-section {
+  padding: 5rem;
+  width: calc(100% - 10rem);
+  background-color: #000;
+  text-align: center;
+  color: #fff;
+}
+.song-section h2 {
+  font-size: 3.5rem;
+  font-family: "Cinzel", serif;
+  text-transform: uppercase;
+  font-weight: 100;
+  letter-spacing: 0.2rem;
+  margin-bottom: 3rem;
+}
+.song-section h2 i {
+  display: inline-block;
+  border-bottom: 1px solid #fff;
+  margin-right: 0.5rem;
+}
+.song-section .lyrics {
+  width: 60%;
+  margin: 0 auto;
+  line-height: 1.5rem;
+  margin-bottom: 3rem;
+}
+.song-section .addition {
+  font-size: 2.5rem;
+  margin-bottom: 0.3rem;
+}
+.song-section .addition b {
+  font-family: "Cinzel", serif;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  margin-right: 1rem;
+}
+.song-section .addition em {
+  margin-left: 1rem;
+  font-family: "Great Vibes", cursive;
+  font-size: 3rem;
+}
+.song-section .credit {
+  font-family: "Prata", serif;
 }
