@@ -213,3 +213,49 @@ img {
 .song-section .credit {
   font-family: "Prata", serif;
 }
+
+.beomgyu-photo .content {
+  width: 80%;
+  margin: 0 auto;
+  border: 2px solid #000;
+  position: relative;
+  top: 6rem;
+  padding-top: 5vw;
+  padding-bottom: 3vw;
+}
+.beomgyu-photo .content .photo {
+  width: 80%;
+  height: auto;
+  border: 15px solid #000;
+  margin: 0 auto;
+}
+.beomgyu-photo .content .credits {
+  font-family: "Prata", serif;
+  text-align: center;
+  width: 80%;
+  margin: 2rem auto 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  line-height: 1.5rem;
+  font-size: 1.2rem;
+}
+.beomgyu-photo .content .credits hr {
+  height: 3rem;
+  width: 0.1rem;
+  background-color: #000;
+}
