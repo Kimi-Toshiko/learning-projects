@@ -10,6 +10,15 @@ html {
   margin: 0 auto;
 }
 
+figcaption {
+  display: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
 .top-section {
   width: calc(100% - 2rem);
   background-color: #000;
@@ -61,4 +70,99 @@ html {
       -ms-grid-row-align: center;
       align-self: center;
   font-size: 0.5rem;
+}
+
+.fic-description-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.fic-description-section div {
+  width: 50%;
+  height: 90vh;
+}
+.fic-description-section .description {
+  border-right: 3px solid #000;
+}
+.fic-description-section .description h2 {
+  margin-top: 2rem;
+  color: #404040;
+  font-size: 1.5rem;
+}
+.fic-description-section .description h1 {
+  font-family: "Raleway", sans-serif;
+  width: 95%;
+  font-weight: 600;
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin: 1rem 0;
+}
+.fic-description-section .description p {
+  margin: 0 0 0.5rem 0;
+  font-weight: 400;
+  font-size: 1.1rem;
+  width: 95%;
+}
+.fic-description-section .description .btn {
+  width: 30%;
+  height: 7%;
+  border: 2px solid #000;
+  margin-top: 2rem;
+}
+.fic-description-section .description .btn a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  text-align: center;
+  color: #000;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.fic-description-section .description .btn a p {
+  font-size: 1.3rem;
+}
+.fic-description-section .description .btn a:hover, .fic-description-section .description .btn a:active {
+  background-color: #404040;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #fff;
+}
+.fic-description-section .img {
+  background-image: url("../assets/main.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0;
 }

@@ -12,6 +12,15 @@ html {
     margin: 0 auto;
 }
 
+figcaption {
+    display: none;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
 .top-section {
     @include black-block(1rem);
     color: $gray-color;
@@ -42,5 +51,66 @@ html {
     .menu-bubbles {
         align-self: center;
         font-size: .5rem;
+    }
+}
+
+.fic-description-section {
+    @include flex(row, no-wrap, center);
+    div {
+        width: 50%;
+        height: 90vh;
+    }
+    .description {
+        border-right: 3px solid $black-color;
+        h2 {
+            margin-top: 2rem;
+            color: $dark-gray-color;
+            font-size: 1.5rem;
+        }
+        h1 {
+            font-family: $menu-font;
+            width: 95%;
+            font-weight: 600;
+            font-size: 3rem;
+            text-transform: uppercase;
+            letter-spacing: .1rem;
+            margin: 1rem 0;
+        }
+        p {
+            margin: 0 0 .5rem 0;
+            font-weight: 400;
+            font-size: 1.1rem;
+            width: 95%;
+        }
+        .btn {
+            width: 30%;
+            height: 7%;
+            border: 2px solid $black-color;
+            margin-top: 2rem;
+            a {
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+                @include flex (column, no-wrap, center);
+                text-align: center;
+                color: $black-color;
+                text-decoration: none;
+                transition: .3s;
+                p {
+                    font-size: 1.3rem;
+                }
+                &:hover, &:active {
+                    background-color: $dark-gray-color;
+                    transition: .3s;
+                    color: $white-color;
+                }
+            }
+        }
+    }
+    .img {
+        background-image: url("../assets/main.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 0;
     }
 }
