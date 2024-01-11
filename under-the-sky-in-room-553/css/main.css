@@ -1,0 +1,388 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Great+Vibes&family=Oswald:wght@300;400&family=Prata&family=Raleway&display=swap");
+html {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  background-color: #fff;
+}
+
+.width-90 {
+  width: 90%;
+  margin: 0 auto;
+}
+
+figcaption {
+  display: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.top-section {
+  width: calc(100% - 2rem);
+  background-color: #000;
+  text-align: center;
+  color: #fff;
+  color: #a2a2a2;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.top-section .social-medias {
+  font-size: 1.2rem;
+}
+.top-section .social-medias a {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #a2a2a2;
+}
+.top-section .social-medias a:nth-child(2) {
+  display: inline-block;
+  margin: auto 0.5rem;
+}
+.top-section .social-medias a:hover, .top-section .social-medias a:active {
+  color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.top-section .copyright p {
+  font-size: 1.1rem;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+}
+.top-section .menu-bubbles {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 0.5rem;
+}
+
+.fic-description-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.fic-description-section div {
+  width: 50%;
+  height: 90vh;
+}
+.fic-description-section .description {
+  border-right: 3px solid #000;
+}
+.fic-description-section .description h2 {
+  width: 90%;
+  margin: 2rem auto 0 auto;
+  color: #404040;
+  font-size: 1.5rem;
+}
+.fic-description-section .description h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin: 1rem auto;
+  width: 90%;
+}
+.fic-description-section .description p {
+  margin: 0 auto 0.5rem auto;
+  font-weight: 400;
+  font-size: 1.1rem;
+  width: 90%;
+}
+.fic-description-section .description .btn {
+  width: 30%;
+  height: 7%;
+  border: 2px solid #000;
+  margin: 2rem 0 0 5%;
+}
+.fic-description-section .description .btn a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  text-align: center;
+  color: #000;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.fic-description-section .description .btn a p {
+  font-size: 1.3rem;
+}
+.fic-description-section .description .btn a:hover, .fic-description-section .description .btn a:active {
+  background-color: #404040;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #fff;
+}
+.fic-description-section .img {
+  background-image: url("../assets/main.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0;
+}
+
+.song-section {
+  padding: 5rem;
+  width: calc(100% - 10rem);
+  background-color: #000;
+  text-align: center;
+  color: #fff;
+}
+.song-section h2 {
+  font-size: 3.5rem;
+  font-family: "Cinzel", serif;
+  text-transform: uppercase;
+  font-weight: 100;
+  letter-spacing: 0.2rem;
+  margin-bottom: 3rem;
+}
+.song-section h2 i {
+  display: inline-block;
+  border-bottom: 1px solid #fff;
+  margin-right: 0.5rem;
+}
+.song-section .lyrics {
+  width: 60%;
+  margin: 0 auto;
+  line-height: 1.5rem;
+  margin-bottom: 3rem;
+}
+.song-section .addition {
+  font-size: 2.5rem;
+  margin-bottom: 0.3rem;
+}
+.song-section .addition b {
+  font-family: "Cinzel", serif;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  margin-right: 1rem;
+}
+.song-section .addition em {
+  margin-left: 1rem;
+  font-family: "Great Vibes", cursive;
+  font-size: 3rem;
+}
+.song-section .credit {
+  font-family: "Prata", serif;
+}
+
+.beomgyu-photo .content {
+  background-color: #fff;
+  width: 80%;
+  margin: 0 auto;
+  border: 2px solid #000;
+  position: relative;
+  top: 8rem;
+  padding-top: 5vw;
+  padding-bottom: 3vw;
+}
+.beomgyu-photo .content .photo {
+  width: 80%;
+  height: auto;
+  border: 15px solid #000;
+  margin: 0 auto;
+}
+.beomgyu-photo .content .credits {
+  font-family: "Prata", serif;
+  text-align: center;
+  width: 80%;
+  margin: 2rem auto 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  line-height: 1.5rem;
+  font-size: 1.2rem;
+}
+.beomgyu-photo .content .credits hr {
+  height: 3rem;
+  width: 0.1rem;
+  background-color: #000;
+}
+
+footer {
+  width: 100%;
+  height: 20rem;
+  background-color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+footer .content {
+  color: #fff;
+  width: 90%;
+  margin: 0 auto 2rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+footer .content .arrow-left, footer .content .arrow-right {
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+footer .content .arrow-left i, footer .content .arrow-right i {
+  font-size: 2.5rem;
+  color: #fff;
+}
+footer .content .arrow-left:hover, footer .content .arrow-right:hover {
+  color: #a2a2a2;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+footer .menu-section {
+  width: 80%;
+  padding: 1.5rem;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-family: "Raleway", sans-serif;
+}
+footer .menu-section menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+footer .menu-section menu ul li {
+  margin: 0 1.5rem;
+}
+footer .menu-section menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+footer .menu-section menu ul li a:hover {
+  color: #a2a2a2;
+  border-bottom: 1px solid #a2a2a2;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
