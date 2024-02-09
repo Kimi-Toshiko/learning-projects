@@ -1,0 +1,48 @@
+@import "vars";
+
+// TEXT BLOCKS SETTINGS
+@mixin heading1 {
+    font-family: $highlight-font;
+    font-weight: $heading1-font-weight;
+    font-size: $heading1-font-size;
+}
+@mixin heading2 {
+    font-family: $highlight-font;
+    font-weight: $heading2-font-weight;
+    font-size: $heading2-font-size;
+}
+@mixin numer {
+    font-family: $highlight-font;
+    font-weight: $numer-font-weight;
+    font-size: $numer-font-size;
+}
+@mixin subtitle {
+    font-family: $subtitle-font;
+    font-weight: $subtitle-font-weight;
+    font-size: $subtitle-font-size;
+}
+@mixin body1 {
+    font-family: $body1-font;
+    font-weight: $body1-font-weight;
+    font-size: $body1-font-size;
+}
+@mixin btns {
+    font-family: $highlight-font;
+    font-weight: $heading2-font-weight;
+    font-size: $heading2-font-size;
+}
+@mixin subtitle2 {
+    font-family: $highlight-font;
+    font-weight: $subtitle2-font-weight;
+    font-size: $subtitle2-font-size;
+}
+@mixin body2 {
+    font-family: $highlight-font;
+    font-weight: $body2-font-weight;
+    font-size: $body2-font-size;
+}
+@mixin arrowtext {
+    font-family: $highlight-font;
+    font-weight: $arrowtext-font-weight;
+    font-size: $arrowtext-font-size;
+}

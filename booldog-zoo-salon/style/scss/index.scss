@@ -1,0 +1,6 @@
+@import "vars";
+@import "mixins";
+
+html {
+    font-size: $body-font-size;
+}
