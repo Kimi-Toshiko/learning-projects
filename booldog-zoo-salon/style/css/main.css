@@ -1,4 +1,83 @@
 @import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 html {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
   font-size: 20px;
+  color: #44000A;
+}
+
+figure figcaption {
+  display: none;
+}
+
+.content {
+  width: 95%;
+  margin: 0 auto;
+}
+
+header {
+  padding: 0.5rem 0;
+}
+header .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 50%;
+}
+header menu li {
+  list-style-type: none;
+}
+header menu li a {
+  text-decoration: none;
+  color: #44000A;
+  -webkit-transition: 0.08s;
+  transition: 0.08s;
+}
+header menu li a:hover, header menu li a:active {
+  -webkit-transition: 0.08s;
+  transition: 0.08s;
+  border-bottom: 1px solid #44000A;
+}
+header .contacts a {
+  text-decoration: none;
+}
+header .contacts a:first-child {
+  color: #44000A;
+  margin-right: 0.5rem;
+}
+header .contacts a:first-child:hover, header .contacts a:first-child:active {
+  -webkit-transition: 0.08s;
+  transition: 0.08s;
+  border-bottom: 1px solid #44000A;
+}
+header .contacts a img:nth-child {
+  fill: white;
 }

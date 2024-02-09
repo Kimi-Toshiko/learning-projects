@@ -2,5 +2,32 @@
 @import "mixins";
 
 html {
-    font-size: $body-font-size;
+    @include body1;
+}
+
+figure {
+    figcaption {
+        display: none;
+    }
+}
+
+.content {
+    @include content-style;
+}
+
+header {
+    padding: .5rem 0;
+    .content {
+        @include flex (row, no-wrap, space-between);
+        align-content: center;
+        align-items: center;
+    }
+    @include menu-style ($dark-bordo-color);
+    .contacts {
+        a img {
+            &:nth-child {
+                fill: white;
+            }
+        }
+    }
 }

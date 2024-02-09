@@ -1,48 +1,125 @@
 @import "vars";
 
 // TEXT BLOCKS SETTINGS
-@mixin heading1 {
+@mixin heading1() {
     font-family: $highlight-font;
     font-weight: $heading1-font-weight;
     font-size: $heading1-font-size;
+    color: $dark-bordo-color;
 }
 @mixin heading2 {
     font-family: $highlight-font;
     font-weight: $heading2-font-weight;
     font-size: $heading2-font-size;
+    color: $dark-bordo-color;
 }
 @mixin numer {
     font-family: $highlight-font;
     font-weight: $numer-font-weight;
     font-size: $numer-font-size;
+    color: $dark-bordo-color;
 }
 @mixin subtitle {
-    font-family: $subtitle-font;
+    font-family: $highlight-font;
     font-weight: $subtitle-font-weight;
     font-size: $subtitle-font-size;
+    color: $dark-bordo-color;
 }
 @mixin body1 {
-    font-family: $body1-font;
-    font-weight: $body1-font-weight;
-    font-size: $body1-font-size;
+    font-family: $highlight-font;
+    font-weight: $body-font-weight;
+    font-size: $body-font-size;
+    color: $dark-bordo-color;
 }
 @mixin btns {
     font-family: $highlight-font;
     font-weight: $heading2-font-weight;
     font-size: $heading2-font-size;
+    color: $dark-bordo-color;
 }
 @mixin subtitle2 {
     font-family: $highlight-font;
     font-weight: $subtitle2-font-weight;
     font-size: $subtitle2-font-size;
+    color: $dark-bordo-color;
 }
 @mixin body2 {
     font-family: $highlight-font;
     font-weight: $body2-font-weight;
     font-size: $body2-font-size;
+    color: $dark-bordo-color;
 }
 @mixin arrowtext {
     font-family: $highlight-font;
     font-weight: $arrowtext-font-weight;
     font-size: $arrowtext-font-size;
+    color: $dark-bordo-color;
+}
+
+// STYLE BLOCKS
+@mixin flex($direction, $wrap, $justify) {
+    display: flex;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+    justify-content: $justify;
+}
+
+@mixin bg-img ($img, $repeat, $size) {
+    background-image: $img;
+    background-repeat: $repeat;
+    background-size: $size;
+
+}
+
+@mixin bg-dark ($img, $size) {
+    background: linear-gradient(rgba(50, 50, 50, 0.7), rgba(50, 50, 50, 0.7)), $img no-repeat;
+    background-size: $size;
+}
+
+@mixin center-thru-position {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin content-style {
+    width: 95%;
+    margin: 0 auto;
+}
+
+@mixin main-links-hover ($color) {
+    transition: .08s;
+    border-bottom: 1px solid $color;
+}
+
+@mixin menu-style ($color) {
+    menu {
+        @include flex(row, no-wrap, space-between);
+        width: 50%;
+        li {
+            list-style-type: none;
+            a {
+                text-decoration: none;
+                color: $color;
+                transition: .08s;
+                &:hover, &:active {
+                    @include main-links-hover($color);
+                }
+            }
+        }
+    }
+    .contacts {
+        a {
+            text-decoration: none;
+            &:first-child {
+                color: $color;
+                margin-right: .5rem;
+                &:hover, &:active {
+                    @include main-links-hover($color);
+                }
+            }
+        }
+    }
 }
