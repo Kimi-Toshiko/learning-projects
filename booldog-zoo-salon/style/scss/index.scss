@@ -3,6 +3,7 @@
 
 html {
     @include body1;
+    background-color: $white-color;
 }
 
 figure {
