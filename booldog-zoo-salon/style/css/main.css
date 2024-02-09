@@ -11,6 +11,34 @@ figure figcaption {
   display: none;
 }
 
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 2.6rem;
+  color: #44000A;
+}
+
+.subtitle {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: #44000A;
+}
+
+.subtitle2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 0.7rem;
+  color: #44000A;
+}
+
+.btn-text {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #F9F7F2;
+}
+
 .content {
   width: 95%;
   margin: 0 auto;
@@ -81,4 +109,135 @@ header .contacts a:first-child:hover, header .contacts a:first-child:active {
 }
 header .contacts a img:nth-child {
   fill: white;
+}
+
+.landing-info .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-top: 2rem;
+}
+.landing-info .content .main-info {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.landing-info .content .landing-img {
+  height: auto;
+  max-height: 70vh;
+  width: 50%;
+}
+.landing-info .content .landing-img figure img {
+  width: 100%;
+  height: auto;
+}
+.landing-info .content .btn {
+  background-color: #DE8592;
+  width: 40.5%;
+  height: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.landing-info .content .btn:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background-color: #FBE8E7;
+}
+.landing-info .content .btn:hover span {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #44000A;
+}
+.landing-info .content .btn span {
+  text-align: center;
+}
+.landing-info .content .happy-pets {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.landing-info .content .happy-pets .imgs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+.landing-info .content .happy-pets .imgs figure:first-child {
+  position: relative;
+  z-index: 3;
+}
+.landing-info .content .happy-pets .imgs figure:nth-child(2) {
+  position: relative;
+  z-index: 2;
+  right: 1rem;
+}
+.landing-info .content .happy-pets .imgs figure:nth-child(3) {
+  position: relative;
+  z-index: 1;
+  right: 2rem;
 }

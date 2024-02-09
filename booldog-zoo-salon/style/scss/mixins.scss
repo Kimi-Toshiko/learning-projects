@@ -33,9 +33,9 @@
 }
 @mixin btns {
     font-family: $highlight-font;
-    font-weight: $heading2-font-weight;
-    font-size: $heading2-font-size;
-    color: $dark-bordo-color;
+    font-weight: $buttons-font-weight;
+    font-size: $buttons-font-size;
+    color: $white-color;
 }
 @mixin subtitle2 {
     font-family: $highlight-font;
@@ -94,6 +94,14 @@
     border-bottom: 1px solid $color;
 }
 
+@mixin content-padding-top {
+    padding-top: 2rem;
+}
+
+@mixin basic-transition {
+    transition: .3s;
+}
+
 @mixin menu-style ($color) {
     menu {
         @include flex(row, no-wrap, space-between);
@@ -120,6 +128,31 @@
                     @include main-links-hover($color);
                 }
             }
+        }
+    }
+}
+
+@mixin btn-style {
+    .btn {
+        background-color: $pink-dark-color;
+        width: 40.5%;
+        height: 3rem;
+        @include flex (row, no-wrap, center);
+        align-content: center;
+        align-items: center;
+        border-radius: .5rem;
+        text-decoration: none;
+        @include basic-transition();
+        &:hover {
+            @include basic-transition();
+            background-color: $light-pink-color;
+            span {
+                @include basic-transition();
+                color: $dark-bordo-color;
+            }
+        }
+        span {
+            text-align: center;
         }
     }
 }
